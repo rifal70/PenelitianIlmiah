@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilToko"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil Toko"
+            android:id="@+id/Head"
+            android:background="@color/white"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/Head2"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_below="@+id/Head"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            android:textColor="@color/white"
+            android:background="@color/transparentBlack"
+            android:id="@+id/Head3"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/Head2"/>
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Head3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/utama"
+                        android:layout_width="fill_parent"
+                        android:layout_height="300dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/toko" />
+
+                    <ImageButton
+                        android:id="@+id/kedua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:src="@drawable/toko1" />
+                    <ImageButton
+                        android:id="@+id/ketiga"
+                        android:src="@drawable/toko2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp" />
+                    <ImageButton
+                        android:id="@+id/keempat"
+                        android:src="@drawable/toko3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    </RelativeLayout>
+</ScrollView>
